@@ -43,7 +43,7 @@ const Friends = () => {
                 name: '',
                 age: '',
                 email: ''
-            })
+            });
         })  
     };
 
@@ -56,7 +56,7 @@ const Friends = () => {
                     type="text"
                     id="name"
                     name="name"
-                    // value={friend.name}
+                    value={friend.name}
                     onChange={handleChange}
                     placeholder="name"
                     />
@@ -66,7 +66,7 @@ const Friends = () => {
                     type="text"
                     id="age"
                     name="age"
-                    // value={friend.age}
+                    value={friend.age}
                     onChange={handleChange}
                     placeholder="age"
                     />
@@ -76,7 +76,7 @@ const Friends = () => {
                     type="text"
                     id="email"
                     name="email"
-                    // value={friend.email}
+                    value={friend.email}
                     onChange={handleChange}
                     placeholder="email"
                     />
