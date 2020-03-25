@@ -26,7 +26,11 @@ const Login = () => {
             .then(res => {
                 console.log(res);
                 window.localStorage.setItem('token', JSON.stringify(res.data.payload));
-                history.push('/friends');
+                history.push('/protected');
+                setCredentials({
+                    username: '',
+                    password: ''
+                })
             })
             .catch(err => console.log(err))
     };
@@ -56,7 +60,7 @@ const Login = () => {
                      />
                 </label>
 
-                <button type="submit">Log in</button>
+                <button type="submit"> Log in </button>
             </form>
         </div>
     )
